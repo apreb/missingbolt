@@ -4,7 +4,7 @@ permalink: /evse.html
 
 
 #EVSE Inteligente
-![](/public/2EVSE.jpg)
+![](/2EVSE.jpg)
 
 
 
@@ -78,7 +78,7 @@ Quando um dispositivo se liga ao EVSE por WiFi recebe um endereço IP através d
 
 #### <a href="#topo">Página inicial</a> <a name="id21"></a>
 
-![](/public/PagInicialNotConn.jpg)
+![](/PagInicialNotConn.jpg)
 
 
 - (1) Acesso às configurações
@@ -108,7 +108,7 @@ Quando um dispositivo se liga ao EVSE por WiFi recebe um endereço IP através d
 #### <a href="#topo">Temporizadores Básicos</a> <a name="id22"></a>
 
 
-![](/public/SimpleTimers.png)
+![](/SimpleTimers.png)
 
 Pressionar em `Timers` repetidamente até aparecer a secção desejada: `TIMERS` -> `STD TIMERS`
 
@@ -125,7 +125,7 @@ No caso de os temporizadores estarem ativados, aparece no écran a próxima aç�
 #### <a href="#topo">Temporizadores Avançados</a> <a name="id23"></a>
 
 
-![](/public/AdvancedTimers.jpg)
+![](/AdvancedTimers.jpg)
 
 
 Pressionar em `Timers` repetidamente até aparecer a secção desejada: `TIMERS` -> `STD TIMERS` -> `ADV TIMERS`
@@ -155,7 +155,7 @@ Ao definir um `End Time` e um um par de valores `Start SOC` e `End SOC` válido,
 
 #### <a href="#topo">Estatísticas</a> <a name="id24"></a>
 
-![](/public/Stats.jpg)
+![](/Stats.jpg)
 
 Cada carga é registada na memoria do EVSE. São registados os seguintes valores:
 - `Data` de inicio da carga. no caso de o EVSE não estar ligado à Internet aparece "No NTP"
@@ -177,7 +177,7 @@ No fundo da página aparece a opção de salvar o ficheiro que contém o registo
 #### <a href="#topo">Configuração INFO</a> <a name="id25"></a>
 #### <a href="#topo">Configuração SCENE</a> <a name="id26"></a>
 
-![](/public/configscene.png)
+![](/configscene.png)
 
 Esta página permite configurar até 2 temporizadores independentes dentro dos quais o EVSE fica habilitado a carregar. Fora destes horários o EVSE permanece desabilitado. A ativação desta funcionalidade é feita na pagina principal selecionando a cena `Auto Scene`.
 
@@ -186,7 +186,7 @@ A opção horária contratada da instalação é definida em `Opção Horária` 
 
 #### <a href="#topo">Configuração CAR</a> <a name="id27"></a>
 
-![](/public/configcar.png)
+![](/configcar.png)
 
 Estão pré-configurados alguns valores típicos de capacidade útil de alguns veículos elétricos que podem ser selecionados da lista no topo da página.
 
@@ -202,7 +202,7 @@ Quanto mais **reais** forem estes valores, mais aproximado é o resultado dos [t
 
 Existem mais 2 parâmetros que podem ser configurados nesta página:
 
-![](/public/configcar2.jpg)
+![](/configcar2.jpg)
 
 - `Maximum EVSE Amps` - Este valor define os amperes máximos permitidos pelo EVSE em segurança. Deve refletir o valor máximo permitido pelo próprio EVSE ou, o valor máximo que a tomada do posto de carregamento permite, no caso de este valor ser inferior ao do próprio EVSE.
 
@@ -245,7 +245,7 @@ O EVSE subscreve o tópico `evse/garagem/to` e publica dados em `evse/garagem/fr
 
 #### <a href="#topo">Configuração WIFI</a> <a name="id29"></a>
 
-![](/public/configwifi.jpg)
+![](/configwifi.jpg)
 
 Parâmetros configuráveis:
 
@@ -259,7 +259,7 @@ Parâmetros configuráveis:
 
 ## 3. <a href="#topo">Carregar</a> <a name="id3"></a>
 
-![](/public/charging.jpg)
+![](/charging.jpg)
 
 Quando o EVSE está a carregar, aparecem linhas adicionais com as seguintes estatísticas:
 
@@ -273,7 +273,7 @@ Quando existe um **medidor de energia** eNode na instalação ligado à mesma re
 
 ## <a href="#topo">4. Botão e LED</a> <a name="id4"></a>
 
-![](/public/box.jpg)
+![](/box.jpg)
 
 
 O Botão capacitivo pode executar diferentes funções consoante o estado do EVSE. Atualmente está desligado por software.
@@ -312,7 +312,7 @@ O LED RGB fornece uma indicação visual do estado do EVSE:
 
 #### <a href="#topo">Instalação</a> <a name="id51"></a>
 
-![](/public/eNode.png)
+![](/eNode.png)
 
 Antes de fazer qualquer alteração no quadro elétrico é obrigatório desligar o disjuntor geral do fornecimento de energia.
 
@@ -331,13 +331,13 @@ Quando o eNode é ligado à tomada, radia o seu SSID para poder ser acedido.
 
 Aceder ao WiFi do eNode, e navegar para o endereço `http://10.1.1.1`
 
-![](/public/enode_web.png)
+![](/enode_web.png)
 
 No caso de as leituras de energia estarem trocadas é necessário **desligar o quadro elétrico**, e **trocar o CT de orientação**. Quando estiver OK clicar no botão do menu, `≡`, no canto superior esquerdo.
 
 Navegar para a secção WiFi e configurar a rede WiFi local:
 
-![](/public/enode_confwifi.png)
+![](/enode_confwifi.png)
 
 - `Name` - Nome do eNode, é usado na pagina principal do EVSE, no `Emoncms` e no `MQTT` 
 - `WiFi Access Point` - Credenciais de acesso em modo Access Point.
@@ -350,7 +350,7 @@ Assim já é possível aceder ao eNode através da rede local através do endere
 
 É ainda necessário efetuar as seguintes configurações:
 
-![](/public/enode_confenergy.png)
+![](/enode_confenergy.png)
 
 - `Energy Sensors` - Numero de PZEMs presente no eNode. `Default:1`
 - `Direction` - Deteção de sentido de corrente. `Default:sim`
